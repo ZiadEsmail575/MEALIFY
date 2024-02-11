@@ -1,0 +1,197 @@
+@media screen and (max-width:1100px) {
+    .space{
+        padding: 50px 0!important;
+    }
+    :root{
+        font-size: 12px;
+    }
+    nav {
+        background-color: transparent!important;
+        box-shadow: 0 0 14px 0 transparent !important;
+    }
+    .nav-container{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .nav-container ul{
+        display: flex;
+        flex-direction: column;
+    }
+    /* home========================= */
+    .btn .s-btn div.shape::before{
+        content: "";
+        width: 35px!important;
+        height:35px!important;
+        background-image: linear-gradient( to right, var(--color-primary) 0 50%, transparent 50%  )!important ;
+        border-radius: 50% !important;
+        position: absolute !important; 
+        right: -2px !important;
+        z-index: -1 !important;
+        
+    }
+    
+    .home-container .home-img{
+        width: 70%;
+        margin-bottom: 40px;
+    }
+    .home-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center; 
+    }
+    .home-container .home-content{
+        text-align: center;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+    }
+    .home-container .home-content .btn{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding-bottom: 50px;
+    }
+    .home-content .btn .f-btn ,.home-content .btn .s-btn{
+        width: fit-content;
+    }
+    
+}
+@media screen and (max-width:1100px) {
+    .chefs .chef-content{
+        width:100%!important;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:  0 auto;
+    }
+    .chefs .chef-content .chef-inner{
+        margin: 30px 0;
+    }
+    .chef-container{
+        width: 100%!important;
+    }
+    
+    /* ?gallery */
+    .gallery .gallery-photos{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1.25rem;
+        max-height: 750px!important;
+        }
+        .gallery .gallery-photos picture{
+    
+            width: 100%;
+            border: solid 5px var(--color-light);
+            position: relative;
+            overflow: hidden;
+            padding: 0;
+        }
+        .contact-container .contact-content{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .contact-container .contact-content .data{
+            width: 100%!important;
+        }
+        .footer-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem; 
+            padding: 0.625rem;
+            
+        }
+        .about .social ul{
+            margin-bottom: 20px;
+        }
+        .footer .quick-gp{
+            margin-bottom: 20px;
+        }
+        .about{
+            width: 100%!important;
+            padding-top: 1rem;
+        }
+        .subscription {
+            width: 100%!important;
+            padding-top: 0.625rem;
+        }
+        .touch {
+            width:100%!important;
+            padding-top: 0.625rem;
+}
+}
+@media screen and (max-width:840px){
+    .gallery .gallery-photos{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1.25rem;
+        max-height: 650px!important;
+    }
+}
+@media screen and (max-width:730px){
+    .gallery .gallery-photos{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1.25rem;
+        max-height: 550px!important;
+    }
+}
+@media screen and (max-width:630px){
+    .gallery .gallery-photos{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1.25rem;
+        max-height: 450px!important;
+    }
+}
+@media screen and (max-width:530px){
+    .gallery .gallery-photos{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1rem;
+        max-height: 430px!important;
+    }
+}
+@media screen and (max-width:480px){
+    .gallery .gallery-photos{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1rem;
+        max-height: 400px!important;
+    }
+}
+@media screen and (max-width:390px){
+    .gallery .gallery-photos{
+        display: flex!important;
+        flex-wrap: wrap!important;
+        flex-direction: column!important;
+        gap: 1rem!important;
+        max-height: 350px!important;
+    }
+}
+/* @media screen and (max-width:1220px){
+    .gallery .gallery-photos{
+        display: flex!important;
+        flex-wrap: wrap!important;
+        flex-direction: column!important;
+        gap: 1rem!important;
+        max-height: 1000px!important;
+    }
+} */
+@media screen and (max-width:500px){
+    .chef-img::before{
+        bottom: -14px!important;
+    }
+}

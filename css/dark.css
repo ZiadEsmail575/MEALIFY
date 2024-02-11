@@ -1,0 +1,103 @@
+body:has(.mode input:checked) body{
+    background-color: #1d1c1c;
+}
+::selection{
+    background-color: var(--color-primary);
+    color: black;
+}
+
+:root:has(.mode:checked)body{
+    background-color: #202020;
+}
+
+:root:has(.mode input:checked){
+    --black-color:white;
+    --primary-hue: 35;
+    --primary-lightness: 44%;
+    --primary-saturation: 72%;
+    --light-hue: 0;
+    --light-saturation: 0%;
+    --light-lightness: 9%;
+    --color-default: #fff;
+    --color-secondary: #fff;
+    --color-tertiary: #9f9f9f;
+    --color-light-grey: #252525;
+    --color-primary: hsl( var(--primary-hue), var(--primary-saturation), var(--primary-lightness) );
+    --color-light: hsl( var(--light-hue), var(--light-saturation), var(--light-lightness) );
+}
+
+:root:has(.mode input:checked) p{
+    color: #fff;
+}
+body:not(:has(:target)):has(.mode input:checked) .home-active,
+body:has(.home:target):has(.mode input:checked) .home-active,
+body:has(.chefs:target):has(.mode input:checked) .chefs-active,
+body:has(.gallery:target):has(.mode input:checked) .gallery-active,
+body:has(.contact:target):has(.mode input:checked) .contacts-active
+{
+    color: var(--black-color);
+}
+body:not(:has(:target)):has(.mode input:checked) .home-active::before,
+body:has(.home:target):has(.mode input:checked) .home-active::before,
+body:has(.chefs:target):has(.mode input:checked) .chefs-active::before,
+body:has(.gallery:target):has(.mode input:checked) .gallery-active::before,
+body:has(.contact:target):has(.mode input:checked) .contacts-active::before
+{
+    width: 100%;
+}
+body:has(.mode input:checked) .mode .light{
+    display: block;
+    color: #fff;
+}
+body:has(.mode input:checked) .mode .dark{
+    display: none;
+
+}
+body:has(.mode input:checked) .chef-img::before{
+    content: "";
+    width: 100%;
+    height: 3.75rem;
+    background-image: url("../img/team-shape-dark.svg");
+    position: absolute;
+    bottom: 0;
+    
+    
+}
+body:has(.mode input:checked) section.chefs{
+    background-color: #1d1c1c;
+    
+}
+body:has(.mode input:checked) section.contact{
+    background-color: #1d1c1c;
+    
+}
+:root:has(.mode input:checked) h2{
+    color: #fff;
+}
+:root:has(.mode input:checked) .gallery .gallery-photos picture{
+    border:  solid 5px white;
+}
+:root:has(.mode input:checked) .contact-content .email a ,.contact-content .mob a{
+    color: #fff;
+}
+:root:has(.mode input:checked) footer .footer-container h3 {
+    color: white;
+}
+:root:has(.mode input:checked) .about .social ul li a i{
+    color: white;
+}
+:root:has(.mode input:checked) .footer-container .subscription .sub-form button{
+    color: #000;
+}
+:root:has(.mode input:checked) .footer-container .quick-gp ul li a{
+    color: white;
+}
+:root:has(.mode input:checked) .footer-container .quick-gp ul li i{
+    color: white;
+}
+:root:has(.mode input:checked) .footer-container .touch ul li{
+    color: white;
+}
+:root:has(.mode input:checked) .footer-container .touch ul li a{
+    color: white;
+}
